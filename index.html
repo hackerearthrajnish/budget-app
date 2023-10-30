@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class=" first" id="first">
+            <div class="details m-2 " id="outer">
+                <div class="cont">
+                    <h3>Your Budget</h3>
+                    <p id="hide">All fields are Required</p>
+                    <input type="number" class="form-control" placeholder="Enter your Budget" id="budget"><br>
+                    <button class="btn btn-outline-primary" onclick="showtotal() ">Set Budget</button>
+                </div>
+
+                <div class="cont">
+                    <h3>Your Expense</h3>
+                    <p id="hide-ex">All fields are Required</p>
+                    <input type="text" class="form-control" placeholder="Enter Your Expense Type" id="expenses_type"><br>
+                    <input type="number" class="form-control"  placeholder="Enter your Expense" id="expenses"><br>
+                    <button class="btn btn-outline-primary" onclick="showTotalExpenses(); showAll();">Submit</button>
+                </div>
+            </div>
+            <div class="col-12 d-flex  mt-3 mb-3 bg-primary text-white rounded-3 " id="saving">
+                <div class="text-center">
+                    <h4>Total</h4>
+                    <h5 id="total">00</h5>
+                </div>
+                <div class="text-center">
+                    <h4>Expenses</h4>
+                    <h5 id="Expense">00</h5>
+                </div>
+                <div class="text-center">
+                    <h4>Balance</h4>
+                    <h5 id="sav">00</h5>
+                </div>
+            </div>
+            <div class="items" id="items"> 
+
+                <h4 >Expenses</h4>
+                
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
